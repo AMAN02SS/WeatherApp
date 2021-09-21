@@ -255,7 +255,7 @@ margin-top: 50px;
 
 .weather.loading:after{
     visibility: visible;
-    content: url("/img/gif/1493.gif");
+    content: url("img/gif/1493.gif");
     font-size: 30px;
     color: white;
     text-align: center;
@@ -275,7 +275,7 @@ margin-top: 50px;
 }
 .weather.load:after{
     visibility:visible;
-    content: url("/img/gif/1493.gif");
+    content: url("img/gif/1493.gif");
     font-size: 10px;
     color: white;
     text-align: center;
@@ -295,7 +295,7 @@ margin-top: 50px;
 }
 .weather.loadin:after{
     visibility: visible;
-    content: url("/img/gif/1493.gif");
+    content: url("img/gif/1493.gif");
     font-size: 10px;
     color: white;
     text-align: center;
