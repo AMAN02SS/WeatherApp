@@ -2,7 +2,7 @@
 A web application dedicated to displaying WeatherApi weather forecasts.
 
 
-![Screenshot of the application](https://photos.app.goo.gl/RKeSwW8hxAhpk2h77)
+![Screenshot of the application](https://ibb.co/B3NRN3F)
 
 Demo : https://aman02ss.github.io/WeatherApp/
 
