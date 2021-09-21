@@ -1,0 +1,384 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    /**background: linear-gradient(left to right , #28a4b4, #7dd56f);**/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-image:url('img/gif/Above\ Clouds.gif'); 
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-items:inherit;
+   
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.topLogo{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    height: 60px;
+    width: 100px;
+
+}
+
+.text{
+    font-size: 50px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    margin:4px;
+    
+ }
+
+ .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+
+ input.search-Bar {
+    
+    outline: none;
+    border-color:#0833c0 ;
+    height: 30px;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: white;
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    font-size: 200%;
+    width: 600px;
+
+}
+
+button {
+
+
+    background-color: #0d88ec;
+    color: black;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: inherit;
+    width: 150px;
+    height: 25px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    
+}
+
+
+button:hover {
+    background: rgb(3, 85, 122);
+}
+
+.FLEX{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-gap: 5px;
+}
+
+
+.card {
+    background: #0000007a;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   justify-content:safe;
+   align-items:center;
+   text-align:center;
+    color: white;
+    padding:1em;
+    border-radius: 30px;
+    width: 100%;
+    max-width:91%;
+     margin:1px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+    height:415px
+}
+
+
+.I{
+    background: #0000007a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     color: white;
+     padding: 1em;
+     border-radius: 30px;
+     width: 100%;
+     max-width: 90%;
+      margin:0.5px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 100%;
+     height: 195px;
+}
+
+.II{
+    background: #0000007a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     color: white;
+     padding: 1em;
+     border-radius: 30px;
+     width: 100%;
+     max-width: 90%;
+      margin: 0.5px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 100%;
+     height: 194px;
+     
+}
+
+.text2{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.text3{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.icon2{
+    height: 70px;
+    width:90px
+}
+
+.icon3{
+    height: 70px;
+    width:90px
+}
+
+.chance_of_rain1{
+    font-size: 25px;
+}
+
+.chance_of_rain2{
+    font-size: 25px;
+}
+.max_temp1,.min_temp1{
+    font-size: 25px;
+}
+.max_temp2,.min_temp2{
+    font-size: 25px;
+}
+
+
+
+h1.temp
+{
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+div#rightbox {
+    float: right;
+    text-align:right;
+}
+
+div#leftbox {
+    float: left;
+    text-align: left;
+}
+
+.icon{
+    height: 100px;
+    width:100px
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    height:100px;
+    margin:5px;
+    
+}
+
+.description{
+    font-size: 35px;
+    text-transform: capitalize;
+        
+}
+
+.list{
+margin-top: 50px;
+}
+
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+    padding: 20px;
+    margin:20px;
+
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: url("/img/gif/1493.gif");
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 0;
+    left: 20px;
+}
+
+
+.weather.load{
+    visibility:hidden;
+    max-height: 10px;
+    position: relative;
+
+}
+.weather.load:after{
+    visibility:visible;
+    content: url("/img/gif/1493.gif");
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 0;
+    left: 20px;
+}
+
+
+.weather.loadin{
+    visibility: hidden;
+    max-height: 10px;
+    position: relative;
+
+}
+.weather.loadin:after{
+    visibility: visible;
+    content: url("/img/gif/1493.gif");
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 0;
+    left: 20px;
+}
+.footer-basic {
+    padding:10px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    border-radius: 30px;
+    margin-top: 1px;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:5px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:5px;
+    text-align:center;
+    font-size:20px;
+    color:#aaa;
+    margin-bottom:0;
+    opacity:0.8;
+  }
+  .footer-basic .copyright2 {
+    margin-top:5px;
+    text-align:center;
+    font-size:20px;
+    color:#aaa;
+    margin-bottom:0;
+    opacity:0.8;
+  }
+
+
+
+
+
