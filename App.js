@@ -41,7 +41,7 @@ let weather = {
             document.querySelector(".min_temp1").innerText = "Min. : " + mintemp_c + " °C";
             document.querySelector(".icon2").src = icon;
             document.querySelector(".text2").innerText = text;
-            document.querySelector(".weather").classList.remove("loading2");
+            document.querySelector(".weather").classList.remove("loaading2");
             document.querySelector(".chance_of_rain1").innerText = "chance of Rain: " + daily_chance_of_rain + " %";
 
 
@@ -55,7 +55,7 @@ let weather = {
             document.querySelector(".min_temp2").innerText = "Min. : " + mintemp_c + " °C";
             document.querySelector(".icon3").src = icon;
             document.querySelector(".text3").innerText = text;
-            document.querySelector(".weather").classList.remove("loading3");
+            // document.querySelector(".weather").classList.remove("loadding3");
             document.querySelector(".chance_of_rain2").innerText = "chance of Rain: " + daily_chance_of_rain + " %";
 
 
@@ -101,10 +101,10 @@ let date = document.getElementById('date');
 let date2 = document.getElementById('date2');
 let date3 = document.getElementById('date3');
 let todaydate = new Date();
-let todaydate2 = new Date();
-let todaydate3 = new Date();
+let tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+let todaydate3 = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 date.innerText = dateManager(todaydate);
-date2.innerText = dateManager2(todaydate2);
+date2.innerText = dateManager2(tomorrow);
 date3.innerText = dateManager3(todaydate3);
 
 
@@ -122,26 +122,26 @@ function dateManager(dateArg) {
 }
 
 function dateManager2(dateArg2) {
-    let days = ['Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday', 'sunday'];
+    let days = ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
     let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     let year = dateArg2.getFullYear();
     let month = months[dateArg2.getMonth()];
-    let date1 = dateArg2.getDate() + 1;
+    let date1 = dateArg2.getDate();
     let date = date1;
     let day1 = days[dateArg2.getDay()];
-    let day = day1;
-    let dinak2 = (month + ',' + date + " " + year + "  (" + day + ")");
+
+    let dinak2 = (month + ',' + date + " " + year + "  (" + day1 + ")");
 
     return dinak2;
 
 }
 
 function dateManager3(dateArg3) {
-    let days = ['Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday', 'sunday', 'Monday'];
+    let days = ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
     let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     let year = dateArg3.getFullYear();
     let month = months[dateArg3.getMonth()];
-    let date2 = dateArg3.getDate() + 2;
+    let date2 = dateArg3.getDate();
     let date = date2;
     let day = days[dateArg3.getDay()];
 
