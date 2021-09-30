@@ -29,6 +29,7 @@ body{
 .topLogo{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 img{
@@ -38,7 +39,7 @@ img{
 }
 
 .text{
-    font-size: 50px;
+    font-size: 5vw;
     text-align: center; 
     display: flex;
     justify-content: center;
@@ -64,8 +65,8 @@ img{
     background: white;
     color: rgb(0, 0, 0);
     font-family: inherit;
-    font-size: 200%;
-    width: 600px;
+    font-size: 4vw;
+    width: calc(100% - 100px);
 
 }
 
@@ -80,12 +81,12 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    border-radius: 15px;
+    font-size: 2vw;
+    border-radius: 20px;
     text-align: center;
     align-items: inherit;
-    width: 150px;
-    height: 25px;
+    width:25vw;
+    height: 4vw;
     margin: 2px;
     display: flex;
     justify-content: center;
@@ -126,10 +127,10 @@ button:hover {
     border-radius: 30px;
     width: 100%;
     max-width:91%;
-     margin:1px;
+     margin:0vw;
     font-family: 'Open Sans', sans-serif;
-    font-size: 120%;
-    height:415px
+    font-size: 2vw;
+    height:auto;
 }
 
 
@@ -145,8 +146,8 @@ button:hover {
      max-width: 90%;
       margin:0.5px;
      font-family: 'Open Sans', sans-serif;
-     font-size: 100%;
-     height: 195px;
+     font-size: 2vw;
+     height: auto/2;
 }
 
 .II{
@@ -161,18 +162,22 @@ button:hover {
      max-width: 90%;
       margin: 0.5px;
      font-family: 'Open Sans', sans-serif;
-     font-size: 100%;
-     height: 194px;
+     font-size: 2vw;
+     height: auto/2;
      
+}
+.date{
+    margin:1vw;
+    font-size: 2vw;
 }
 
 .text2{
-    font-size: 25px;
+    font-size: 2vw;
     text-transform: capitalize;
 }
 
 .text3{
-    font-size: 25px;
+    font-size: 2vw;
     text-transform: capitalize;
 }
 
@@ -187,17 +192,17 @@ button:hover {
 }
 
 .chance_of_rain1{
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .chance_of_rain2{
-    font-size: 25px;
+    font-size: 2vw;
 }
 .max_temp1,.min_temp1{
-    font-size: 25px;
+    font-size: 2vw;
 }
 .max_temp2,.min_temp2{
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 
@@ -205,7 +210,7 @@ button:hover {
 h1.temp
 {
     margin: 0;
-    margin-bottom: 0.4em;
+    margin-bottom: 0;
 }
 
 div#rightbox {
@@ -229,12 +234,12 @@ div#leftbox {
     justify-content:center;
     text-align: center;
     height:100px;
-    margin:5px;
+    margin:0.5vw;
     
 }
 
 .description{
-    font-size: 35px;
+    font-size: 3vw;
     text-transform: capitalize;
         
 }
@@ -243,10 +248,16 @@ div#leftbox {
 margin-top: 50px;
 }
 
+.city{
+    font-size: 3vw;
+    text-transform: capitalize;
+    margin:1vw;
+}
+
 
 .weather.loading{
     visibility: hidden;
-    max-height: 20px;
+    
     position: relative;
     padding: 20px;
     margin:20px;
@@ -255,8 +266,8 @@ margin-top: 50px;
 
 .weather.loading:after{
     visibility: visible;
-    content: url("img/gif/1493.gif");
-    font-size: 30px;
+    content: url("/img/gif/1493.gif");
+    font-size: 5vw;
     color: white;
     text-align: center;
     justify-content: center;
@@ -267,16 +278,16 @@ margin-top: 50px;
 }
 
 
-.weather.load{
+#div2{
     visibility:hidden;
-    max-height: 10px;
+    
     position: relative;
 
 }
-.weather.load:after{
+#div2:after{
     visibility:visible;
-    content: url("img/gif/1493.gif");
-    font-size: 10px;
+    content: url("/img/gif/1493.gif");
+    font-size: 0;
     color: white;
     text-align: center;
     justify-content: center;
@@ -287,16 +298,16 @@ margin-top: 50px;
 }
 
 
-.weather.loadin{
+#div1{
     visibility: hidden;
     max-height: 10px;
     position: relative;
 
 }
-.weather.loadin:after{
+#div1:after{
     visibility: visible;
-    content: url("img/gif/1493.gif");
-    font-size: 10px;
+    content: url("/img/gif/1493.gif");
+    font-size: 5vw;
     color: white;
     text-align: center;
     justify-content: center;
@@ -317,7 +328,7 @@ margin-top: 50px;
     padding:0;
     list-style:none;
     text-align:center;
-    font-size:18px;
+    font-size:2vw;
     line-height:1.6;
     margin-bottom:0;
   }
@@ -344,7 +355,7 @@ margin-top: 50px;
   }
   
   .footer-basic .social > a {
-    font-size:24px;
+    font-size:2vw;
     width:40px;
     height:40px;
     line-height:40px;
@@ -364,7 +375,7 @@ margin-top: 50px;
   .footer-basic .copyright {
     margin-top:5px;
     text-align:center;
-    font-size:20px;
+    font-size:2vw;
     color:#aaa;
     margin-bottom:0;
     opacity:0.8;
@@ -372,13 +383,8 @@ margin-top: 50px;
   .footer-basic .copyright2 {
     margin-top:5px;
     text-align:center;
-    font-size:20px;
+    font-size:2vw;
     color:#aaa;
     margin-bottom:0;
     opacity:0.8;
   }
-
-
-
-
-
