@@ -113,6 +113,7 @@ button:hover {
 }
 
 
+
 .card {
     background: #0000007a;
     
@@ -166,6 +167,8 @@ button:hover {
      height: auto/2;
      
 }
+
+
 .date{
     margin:1vw;
     font-size: 2vw;
@@ -388,3 +391,12 @@ margin-top: 50px;
     margin-bottom:0;
     opacity:0.8;
   }
+
+  @media screen and (max-width: 800px) {
+    .FLEX {
+       display:inherit;/* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .card{
+        height: 70vw;
+    }
+}
